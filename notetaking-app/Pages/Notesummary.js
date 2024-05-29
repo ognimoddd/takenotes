@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Modal } from 'react-native';
 
 export async function summarizeNote(noteText) {
-  const apiKey = 'AIzaSyC92XWJ3G4iPAWtOdHU0-FFTWA-NCI--FA';
+  const apiKey = process.env.API_KEY || '';
   const apiURL = `https://language.googleapis.com/v1/documents:analyzeSyntax?key=${apiKey}`;
 
   const requestData = {
