@@ -4,7 +4,7 @@ import * as ImagePicker from 'expo-image-picker';
 import * as FileSystem from 'expo-file-system';
 
 const HandwritingRecognition = ({ onResult }) => {
-  const apiKey = 'AIzaSyA-i9sNdOQr9cZVqNcgQU_sArShnXOBlSI';
+  const apiKey = process.env.API_KEY || '';
   const apiURL = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
 
   const handleImagePicker = async () => {
