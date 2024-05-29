@@ -36,7 +36,7 @@ const ImageDetection = ({  onClose, onDetectedLabels, onSave }) => {
       setIsLoading(true); // Set isLoading to true before starting the image analysis process
     console.log('isLoading:', isLoading);
       //Google Cloud Vision API key
-      const apiKey = 'AIzaSyA2PfUGATKzIYvdP58lW14SntyWXaecI4g';
+      const apiKey = process.env.API_KEY || '';
       const apiURL = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
   
       const base64ImageData = await FileSystem.readAsStringAsync(imageUri, {
