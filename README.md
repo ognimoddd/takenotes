@@ -20,7 +20,7 @@ Through this project, I demonstrated technical proficiency in mobile app develop
 - User Authentication: Secure login and registration system
 - CRUD Operations: Create, read, update, and delete notes
 - Search: Quickly find notes based on content or tags
-- Customization: Personalize note appearance with various fonts, sizes, and colours
+- Customisation: Personalize note appearance with various fonts, sizes, and colours
 - AI-Powered Features:
   - Text Recognition: Convert images of text into editable notes
   - Image Analysis: Automatically detect and label objects in images
