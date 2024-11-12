@@ -538,12 +538,16 @@ export default function Notes() {
                 fontSize: fontSize,
                 color: color,
                 fontFamily: isHandwritingMode ? 'Verdana' : fontFamily,
-                height: isHandwritingEnabled ? 400 : 440,
+                //height:200,
+                //lineHeight:20,
+                height: isHandwritingEnabled ? 300 : 340,
               }}
               placeholder="Description"
               value={description}
               onChangeText={setDescription}
               multiline={true}
+              //blurOnSubmit={true} 
+              
             />
             {selectedImage && (
               <Image source={{ uri: selectedImage }} style={styles.selectedImage} />
@@ -556,6 +560,7 @@ export default function Notes() {
           )}
         </View>
       </View>
+
 
       <View style={styles.actionsContainer}>
         <TouchableOpacity
@@ -620,7 +625,7 @@ export default function Notes() {
       />
 
 
- <NotesActions
+  <NotesActions
         onSave={handleSubmit}
         onDelete={handleDelete}
         onShare={handleShare}
@@ -630,6 +635,7 @@ export default function Notes() {
       <Toast />
     </LinearGradient>
   );
+  
 }
 
 const styles = StyleSheet.create({

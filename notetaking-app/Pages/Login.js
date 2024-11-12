@@ -153,7 +153,7 @@ export default function Login() {
      
             </View>
           </View>
-          <Pressable onPress={goRegister} style={{ marginTop: -20 }}>
+          <Pressable onPress={goRegister} style={{ marginTop: -70 }}>
             <Text style={{
               textAlign: 'center',
               fontSize: 16,
